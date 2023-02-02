@@ -1,5 +1,5 @@
 import aws_cdk as cdk
-from constructs import Constuct
+from constructs import Construct
 from aws_cdk.pipelines import CodePipeline, CodePipelineSource, ShellStep
 
 class MyPipelineStack(cdk.Stack):
