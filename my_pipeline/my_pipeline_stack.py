@@ -16,3 +16,5 @@ class MyPipelineStack(cdk.Stack):
                                 "cdk synth"]
                         )
                     )
+        pipeline.add_stage(MyPipelineAppStage(self, "test",
+            env=cdk.Environment(account="445841279194", region="eu-east-1")))
